@@ -71,15 +71,15 @@ if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {
         try {
             //Gmail 認証情報
             $host = 'smtp.gmail.com';
-            $username = 'kyth.abe.cham0908@gmail.com'; // example@gmail.com
-            $password = 'Abetai2525';
+            $username = 'ユーザ名'; // example@gmail.com
+            $password = 'パスワード';
 
             //差出人
             $from = $email;
             $fromname = $name;
 
             //宛先
-            $to = 'kyth.abe.cham0908@gmail.com';
+            $to = '受取人のメールアドレス';
             $toname = "受取人の名前";
 
             //件名・本文
