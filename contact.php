@@ -32,7 +32,7 @@ if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {
     if ( $name=='' || $email=='' || $subject=='' || $message=='' ) {
         $err_msg[] = "全ての項目を入力してください";
     
-    // サニタイズ
+    // サニタイズ( 入力された値の無害化 )
     } else {
         $name = htmlspecialchars( $name, ENT_QUOTES, "UTF-8" );
         $email = htmlspecialchars( $email, ENT_QUOTES, "UTF-8" );
